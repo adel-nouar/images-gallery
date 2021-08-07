@@ -6,4 +6,4 @@ This app will be developped using :
 Front: React
 Back: Flask
 API : Unsplash
-Database :
+Database : MongoDB
