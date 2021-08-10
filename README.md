@@ -7,3 +7,4 @@ Front: React
 Back: Flask
 API : Unsplash
 Database : MongoDB
+Using Docker and GIT
