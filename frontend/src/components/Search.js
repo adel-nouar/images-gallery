@@ -9,9 +9,12 @@ const Search = ({ word, setWord, handleSubmit }) => {
           <Form onSubmit={handleSubmit}>
             <Form.Row>
               <Col xs={9}>
-                type="text" value={word}
-                onChange={(e) => setWord(e.target.value)}
-                <Form.Control placeholder="Search for new image" />
+                <Form.Control
+                  type="text"
+                  value={word}
+                  onChange={(e) => setWord(e.target.value)}
+                  placeholder="Search for new image"
+                />
               </Col>
               <Col>
                 <Button variant="primary" type="submit">
