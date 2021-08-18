@@ -1,14 +1,14 @@
-import React from "react";
-import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./components/Header";
-import Search from "./components/Search";
+import React from 'react';
+import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import Search from './components/Search';
 
 // unsplash key stored in a gitignore file for not sharing it on github
 const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
 
 const App = () => {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState('');
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ const App = () => {
       .catch((err) => {
         console.log(err);
       });
-    setWord("");
+    setWord('');
   };
 
   return (
