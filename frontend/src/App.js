@@ -20,7 +20,7 @@ const App = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        setImages([data, ...images]);
+        setImages([{ ...data, title: word }, ...images]);
       })
       .catch((err) => {
         console.log(err);
@@ -32,7 +32,7 @@ const App = () => {
     <div>
       <Header title="Images Gallery" />
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
-      <ImageCard />
+      {!!images.length && <ImageCard image={images[0]} />}
     </div>
   );
 };
