@@ -9,3 +9,6 @@ API : Unsplash -> 80%
 Database : MongoDB -> 0%
 Using Docker -> 0%
 GIT - 100%
+
+From the course: https://www.udemy.com/course/full-stack-web-development-bootcamp
+Instructor: Bogdan Stashchuk
