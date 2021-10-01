@@ -1,9 +1,16 @@
+from json import load
+import os
 from requests import get
 from flask import Flask, request
 import requests
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="./.env.local")
+
+
 
 UNSPLASH_URL="https://api.unsplash.com/photos/random/"
-UNSPLASH_KEY=""
+UNSPLASH_KEY=os.environ.get("UNSPLASH_KEY", "")
 app = Flask(__name__)
 
 @app.route("/new-image")
