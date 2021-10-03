@@ -1,1 +1,1 @@
-GET http://192.168.1.8:5050/new-image?query=algeria
+GET http://192.168.1.8:5050/new-image?query=sky
