@@ -9,7 +9,7 @@ import Welcome from './components/Welcome';
 
 // unsplash key stored in a gitignore file for not sharing it on github
 // const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
-const API_URL = process.env.API_URL || 'http://127.0.0.1:5050';
+const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:5050';
 
 const App = () => {
   const [word, setWord] = useState('');
