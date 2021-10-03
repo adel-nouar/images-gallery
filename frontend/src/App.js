@@ -8,7 +8,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Welcome from './components/Welcome';
 
 // unsplash key stored in a gitignore file for not sharing it on github
-const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
+// const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
+const API_URL = process.env.API_URL || 'http://127.0.0.1:5050';
 
 const App = () => {
   const [word, setWord] = useState('');
@@ -17,7 +18,8 @@ const App = () => {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     fetch(
-      `https://api.unsplash.com/photos/random/?query=${word}&client_id=${UNSPLASH_KEY}`
+      // `https://api.unsplash.com/photos/random/?query=${word}&client_id=${UNSPLASH_KEY}`
+      `${API_URL}/new-image?query=${word}`
     )
       .then((res) => res.json())
       .then((data) => {
